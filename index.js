@@ -1,5 +1,3 @@
-var env = require('node-env-file');
-env(__dirname + '/.env');
 var express = require('express');
 var Search = require('bing.search');
 var mongo = require('mongodb').MongoClient;
