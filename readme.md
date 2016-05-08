@@ -7,5 +7,5 @@
 
 ##Example URLs
 - Search: https://shielded-lake-63242.herokuapp.com/search/montreal?offset=20
--Lastest search terms: https://shielded-lake-63242.herokuapp.com/lastest
+- Latest search terms: https://shielded-lake-63242.herokuapp.com/lastest
 

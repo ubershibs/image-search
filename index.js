@@ -22,7 +22,7 @@ mongo.connect(dbUrl, function(err, db) {
     console.log("Hitting bing for: " + searchQuery + ", with an offset of: " + offset );
     var history = db.collection("history");
     var d = new Date;
-    history.insert({query: process.env.HOST_NAME + ":" + port + "/" + req.originalUrl, time: DateTime.toHttpDate(d)}, function(err, result){
+    history.insert({query: process.env.HOST_NAME + ":" + "/" + req.originalUrl, time: DateTime.toHttpDate(d)}, function(err, result){
       if (err) throw err;
       console.log("Saved search to history: " + req.originalUrl);
     });
